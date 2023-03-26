@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="aboutUs.css"> 
+    <link rel="stylesheet" href="indexcss.css"> 
+</head>
+<body>
+    <div class="conatiner">
+
+        <section id="uppermost">
+            <a href="mainfile.html" id="logo">
+                <li class="logo">BeingHealthy</li>
+            </a>
+
+            <nav>
+                <!-- <label for="checkbox" class="menu-btn">
+                    <i class="fas fa-bars"></i>
+                </label> -->
+                <!-- <input type="checkbox" name="" id=""> -->
+                <ul>
+
+
+                    <li class="items" id="b"><a href="indexhome.html">HOME</a></li>
+                    <li class="items"><a href="aboutUs.html">ABOUT US</a></li>
+                    <li class="items"><a href="indexblogs.html">BLOGS</a></li>
+                    <li class="items"><a href="Contactus.html">CONTACT US</a></li>
+                    <li class="items"><a href="indexmore.html">MORE</a></li>
+                </ul>
+            </nav>
+            <button  id="mobilemenubtn"></button>
+            <label for="mobilemenubtn"><div class="parallelbar"><img src="parallelbars.png" alt=""></div></label>
+        </section>
+    </div>
+    <div id="mobilemenu" style="display: none;">
+        <ul>
+
+
+            <li class="mobileitems" id="b"><a href="indexhome.html">HOME</a></li>
+            <li class="mobileitems"><a href="aboutUs.html">ABOUT US</a></li>
+            <li class="mobileitems"><a href="indexblogs.html">BLOGS</a></li>
+            <li class="mobileitems"><a href="Contactus.html">CONTACT US</a></li>
+            <li class="mobileitems"><a href="indexmore.html">MORE</a></li>
+        </ul>
+    </div> 
+    <div id="midsectionabout">  
+    <div id="header">
+        <h3 class="neon">BEING HEALTHY</h3>
+    </div>
+
+    <div class="first">
+        <h4>MEET OUR EXPERTS</h4>
+        <H1>THE BEST PERSONAL</H1>
+        <H1>TRAINERS IN MILTON KEYNES</H1>
+        <p>
+Put an end to the mid-afternoon slumps, or having to bust out
+the WD40 in order to squeeze into your best suit-trousers or
+dress
+        </p>
+    </div>
+    <h1 id="detail">Our Core Values</h1>
+    <div class="value1">
+        <div>
+            <img src="bpo.jpeg" alt="" width="450px" height="350px">
+            <h3>24/7 Customer Service</h3>
+            <p>Customers are our priority. We are passionate about delivering exceptional, personalised customer service to all.</p>
+        </div>
+        <div>
+            <img src="inovation.jpeg" alt="" width="450px" height="350px">
+            <h3>Innovation</h3>
+            <p>Our culture of creative innovation in people, processes and products bring ideas into reality.</p>
+        </div>
+        <div>
+            <img src="teamwork.jpeg" alt="" width="450px" height="350px">
+            <h3>Teamwork</h3>
+            <p>We are committed to common goals. Effective communication and accountability makes our team achieve greater results.</p>
+        </div>
+    </div>
+    <div class="value2">
+        <div>
+            <h1>Our Team</h1>
+        <p>
+            Here at Gym and Fitness, we have a team of approximately 
+            forty awesome superstars and we owe our success to each 
+            and every one of them! Because we hire for culture first 
+            and foremost, we have some pretty awesome people working 
+            with us who hustle everyday to give you a positive customer 
+            experience. You can find them in areas such as sales, 
+            marketing and ecommerce, customer service, warehousing, 
+            finance, human resources and management. If you think you’re 
+            kind of a big deal and interested in joining our team, 
+            please send us an email with your resume and 
+            a little bit about yourself.
+        </p>
+        </div>
+    
+</div>
+
+    <footer>
+        <div id="heading">
+            <h1>Try Our Free 21 Days Workout Challange</h1>
+            <pre>No credit card required. Cancel anytime</pre>
+        </div>
+        <hr>
+    </footer>
+ 
+    <div id="final">
+        <pre>BeingHealthy &#169 <br>2012 All Rights Reserved| Privacy Policy</pre>
+    </div>
+</div>
+
+<script>
+
+   
+    // mobilemenu
+    function pageWidth() {
+  return window.innerWidth != null? window.innerWidth : document.documentElement && document.documentElement.clientWidth ? document.documentElement.clientWidth : document.body != null ? document.body.clientWidth : null;
+}
+console.log(pageWidth());
+
+
+function greatersize(){
+    var box1 = document.getElementById("mobilemenu");
+        var box2 = document.getElementById("midsectionabout");
+        var box3 =document.getElementById("footer");
+   if(pageWidth()>921){
+             box1.style.display="none";
+            box2.style.display="block";
+            box3.style.display="flex";
+   }
+}
+    document.getElementById("mobilemenubtn").addEventListener("click",function(){
+    
+        var box1 = document.getElementById("mobilemenu");
+        var box2 = document.getElementById("midsectionabout");
+        var box3 =document.getElementById("footer");
+    if(pageWidth() <921){
+        if(box1.style.display=="none" ){
+            box1.style.display="grid";
+            box2.style.display="none";
+            box3.style.display="none";
+
+    
+        }
+        else{
+            box1.style.display="none";
+            box2.style.display="block";
+            box3.style.display="flex";
+    
+        }}
+
+        else{
+            greatersize();
+        }
+    })
+
+    // for page greater than 921px
+     var box1 = document.getElementById("mobilemenu");
+        var box2 = document.getElementById("midsectionabout");
+        var box3 =document.getElementById("footer");
+   if(pageWidth()>921){
+             box1.style.display="none";
+            box2.style.display="block";
+            box3.style.display="flex";
+   }
+
+//    for resizing
+   
+window.addEventListener('resize', function(event){
+    greatersize();
+})
+
+document.getElementsByClassName("b").addEventListener("click",function(){
+
+})
+    
+    </script>
+    </body>
+    </html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEING HEALTHY</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="indexcss.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  
+    <style>
+        
+    </style>
+</head>
+
+<body>
+    <!-- nav bar  -->
+
+
+    <div class="conatiner">
+
+        <section id="uppermost">
+            <a href="mainfile.html" id="logo">
+                <li class="logo">BeingHealthy</li>
+            </a>
+
+            <nav>
+                <!-- <label for="checkbox" class="menu-btn">
+                    <i class="fas fa-bars"></i>
+                </label> -->
+                <!-- <input type="checkbox" name="" id=""> -->
+                <ul>
+
+
+                    <li class="items" id="b"><a href="indexhome.html">HOME</a></li>
+                    <li class="items"><a href="aboutUs.html">ABOUT US</a></li>
+                    <li class="items"><a href="indexblogs.html">BLOGS</a></li>
+                    <li class="items"><a href="Contactus.html">CONTACT US</a></li>
+                    <li class="items"><a href="indexmore.html">MORE</a></li>
+                </ul>
+            </nav>
+            <button  id="mobilemenubtn"></button>
+            <label for="mobilemenubtn"><div class="parallelbar"><img src="parallelbars.png" alt=""></div></label>
+        </section>
+    </div>
+    <div id="mobilemenu" style="display: none;">
+        <ul>
+
+
+            <li class="mobileitems" id="b"><a href="indexhome.html">HOME</a></li>
+            <li class="mobileitems"><a href="aboutUs.html">ABOUT US</a></li>
+            <li class="mobileitems"><a href="indexblogs.html">BLOGS</a></li>
+            <li class="mobileitems"><a href="Contactus.html">CONTACT US</a></li>
+            <li class="mobileitems"><a href="indexmore.html">MORE</a></li>
+        </ul>
+    </div>
+    <!-- navbar -->
+
+
+
+    <!-- starting page -->
+    <div id="middlefirst">
+        <div class="firstpage"></div>
+        <div id="firststarting">
+            <div class="img"><img src="https://pngimg.com/uploads/fitness/fitness_PNG109.png" alt=""></div>
+            <div class="secondsectioninmiddlefirst">
+                <p id="textincontainer">EAT HEALTHY! <br> STAY FIT!</p>
+               <a href="mainfile.html"> <button class="getstart" id="b1">GET STARTED</button></a>
+
+            </div>
+        </div>
+
+
+
+        <div id="secondstarting">
+
+            <div class="secondimg">
+                <img src="https://healthsourcechiro.azureedge.net/media/2079/healthy-life.jpg?v636320193720000000"
+                    alt="">
+            </div>
+            <div class="textinsecond">
+                <h1>BEING HEALTHY</h1>
+                <p>WHAT MAKES YOU HEALTHY!!!</p>
+                <p>This Page <b>BeingHealthy.com</b> helps you to provide knowledge about healthy life and keep trying
+                    to achieve your fitness goal</p>
+            </div>
+        </div>
+        <div id="thirdstarting">
+          <div class="textinthird">
+              <h1>CONTACT US ON</h1>
+              <p>You can Contact us on Instagram, Twitter, Facebook by from <b>CONTACT US</b> Tab</p>
+          </div>
+          <div class="thirdimg">
+              <img src="https://brightlightcontent.com/wp-content/uploads/2017/07/Best-Social-Media-Channels-For-Your-Business.jpg" alt="">
+          </div>
+        </div>
+
+
+        <div id="fourthstarting">
+              <div class="fourthimg">
+                  <img src="https://lcmidlo.com/wp-content/uploads/sermons/2018/09/Made-For-More.jpg" alt="">
+              </div>
+
+              <div class="textinfourth">
+                  <h1>MORE ON OUR WEBSITE</h1>
+                  <p>You can explore more on our website through more tab</p>
+              </div>
+        </div>
+
+</div>
+        <!-- starting page -->
+
+
+        <!-- home page -->
+        
+        <!-- homepage -->
+
+        <!-- footer -->
+
+        <footer id="footer">
+
+            Copyright &copy; BeingHealthy.com
+        </footer>
+        <!-- footer -->
+
+</body>
+<script>
+
+   
+    // mobilemenu
+    function pageWidth() {
+  return window.innerWidth != null? window.innerWidth : document.documentElement && document.documentElement.clientWidth ? document.documentElement.clientWidth : document.body != null ? document.body.clientWidth : null;
+}
+console.log(pageWidth());
+
+
+function greatersize(){
+    var box1 = document.getElementById("mobilemenu");
+        var box2 = document.getElementById("middlefirst");
+        var box3 =document.getElementById("footer");
+   if(pageWidth()>921){
+             box1.style.display="none";
+            box2.style.display="block";
+            box3.style.display="flex";
+   }
+}
+    document.getElementById("mobilemenubtn").addEventListener("click",function(){
+    
+        var box1 = document.getElementById("mobilemenu");
+        var box2 = document.getElementById("middlefirst");
+        var box3 =document.getElementById("footer");
+    if(pageWidth() <921){
+        if(box1.style.display=="none" ){
+            box1.style.display="grid";
+            box2.style.display="none";
+            box3.style.display="none";
+
+    
+        }
+        else{
+            box1.style.display="none";
+            box2.style.display="block";
+            box3.style.display="flex";
+    
+        }}
+
+        else{
+            greatersize();
+        }
+    })
+
+    // for page greater than 921px
+     var box1 = document.getElementById("mobilemenu");
+        var box2 = document.getElementById("middlefirst");
+        var box3 =document.getElementById("footer");
+   if(pageWidth()>921){
+             box1.style.display="none";
+            box2.style.display="block";
+            box3.style.display="flex";
+   }
+
+//    for resizing
+   
+window.addEventListener('resize', function(event){
+    greatersize();
+})
+
+document.getElementsByClassName("b").addEventListener("click",function(){
+
+})
+    
+    </script>
+
+
+</html>

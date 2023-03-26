@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="contactus.css">
+    <link rel="stylesheet" href="indexcss.css">
+</head>
+<body>
+    <div class="conatiner">
+
+        <section id="uppermost">
+            <a href="mainfile.html" id="logo">
+                <li class="logo">BeingHealthy</li>
+            </a>
+            <nav>
+                <ul>
+
+
+                    <li class="items" id="b"><a href="indexhome.html">HOME</a></li>
+                    <li class="items"><a href="aboutUs.html">ABOUT US</a></li>
+                    <li class="items"><a href="indexblogs.html">BLOGS</a></li>
+                    <li class="items"><a href="Contactus.html">CONTACT US</a></li>
+                    <li class="items"><a href="indexmore.html">MORE</a></li>
+                </ul>
+            </nav>
+            <button  id="mobilemenubtn"></button>
+            <label for="mobilemenubtn"><div class="parallelbar"><img src="parallelbars.png" alt=""></div></label>
+        </section>
+    </div>
+    <div id="mobilemenu" style="display: none;">
+        <ul>
+            <li class="mobileitems" id="b"><a href="indexhome.html">HOME</a></li>
+            <li class="mobileitems"><a href="aboutUs.html">ABOUT US</a></li>
+            <li class="mobileitems"><a href="indexblogs.html">BLOGS</a></li>
+            <li class="mobileitems"><a href="Contactus.html">CONTACT US</a></li>
+            <li class="mobileitems"><a href="indexmore.html">MORE</a></li>
+        </ul>
+    </div>
+
+    <div id="contactsection">
+    <div>
+        <h1 id="contact">CONTACT</h1>
+        <hr id="upper">
+        <h3 id="content">We'd &#9825 to help!</h3>
+        <p id="para">We like to create things with fun, open-minded people. Feel free to say hello!</p>
+    </div>
+    <div class="containerdiv">
+        <div class="flexchild" id="c1">
+            <form>
+                <input type="text" placeholder="Your Name">
+                <br>
+                <input type="text" placeholder="Email">
+                <br>
+                <textarea cols="48" rows="10" placeholder="Message"></textarea>                <button>SEND</button>
+            </form>
+        </div>
+        <div class="flexchild" id="c2">
+            <div class="boder">
+                <div id="location1">
+                    <img src="location.png" width="40px" height="40px" alt="">
+                </div>
+                <div id="location2">
+                    <p>
+                        BeingHealthy Pvt. Ltd.
+                    B.No: 23, Model Town,Gurgaon, Haryana
+                    </p>
+                </div>
+            </div>
+            <div class="boder">
+                <div id="phone1">
+                    <img src="icons8-phone-24.png" width="30px" height="30px" alt="">
+                </div>
+                <div id="phone2">
+                    <p>
+                        +(91)9XXXXXXXX0
+                    </p>
+                </div>
+            </div>
+            <div class="Email">
+                <div id="email1">
+                    <img src="Email1.png" width="30px" height="30px" alt="">
+                </div>
+                <div id="email2">
+                    <p>
+                        support@BeingHealthy.com
+                    </p>
+                </div>
+            </div>
+            <hr id="lower">
+            <div id="social">
+                <div class="pic">
+                    <img src="fb.png" alt="" width="40px" height="40px">
+                </div>
+                <div class="pic">
+                    <img src="insta.png" alt="" width="40px" height="40px">
+                </div>
+                <div class="pic">
+                    <img src="tweet.png" alt="" width="40px" height="40px">
+                </div>
+                <div id="pictext">
+                    Follow BeingHealthy 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<script>
+
+      
+    // mobilemenu
+    function pageWidth() {
+  return window.innerWidth != null? window.innerWidth : document.documentElement && document.documentElement.clientWidth ? document.documentElement.clientWidth : document.body != null ? document.body.clientWidth : null;
+}
+console.log(pageWidth());
+
+
+function greatersize(){
+    var box1 = document.getElementById("mobilemenu");
+        var box2 = document.getElementById("contactsection");
+        var box3 =document.getElementById("footer");
+   if(pageWidth()>921){
+             box1.style.display="none";
+            box2.style.display="block";
+            box3.style.display="flex";
+   }
+}
+    document.getElementById("mobilemenubtn").addEventListener("click",function(){
+    
+        var box1 = document.getElementById("mobilemenu");
+        var box2 = document.getElementById("contactsection");
+        var box3 =document.getElementById("footer");
+    if(pageWidth() <921){
+        if(box1.style.display=="none" ){
+            box1.style.display="grid";
+            box2.style.display="none";
+            box3.style.display="none";
+
+    
+        }
+        else{
+            box1.style.display="none";
+            box2.style.display="block";
+            box3.style.display="flex";
+    
+        }}
+
+        else{
+            greatersize();
+        }
+    })
+
+    // for page greater than 921px
+     var box1 = document.getElementById("mobilemenu");
+        var box2 = document.getElementById("contactsection");
+        var box3 =document.getElementById("footer");
+   if(pageWidth()>921){
+             box1.style.display="none";
+            box2.style.display="block";
+            box3.style.display="flex";
+   }
+
+//    for resizing
+   
+window.addEventListener('resize', function(event){
+    greatersize();
+})
+
+document.getElementsByClassName("b").addEventListener("click",function(){
+
+})
+</script>

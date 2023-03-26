@@ -1,0 +1,241 @@
+
+
+body
+{
+    background: url('https://images.pexels.com/photos/4114114/pexels-photo-4114114.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#moresection{
+   
+    display: flex;
+    flex-direction: column;
+
+}
+#selection{
+    margin-left: 10vw;
+   
+}
+#selection div{
+    display: flex;
+    flex-direction: row;
+ 
+    }
+
+
+    #moreheading{
+        font-size: 3rem;
+        font-family: 'Anton', sans-serif;
+        color: rgb(4, 67, 184);
+        text-decoration: underline ;
+    }
+  
+#bmiselect{
+    width: 15vw;
+    height: 10vh;
+    background-color: white;
+    font-size: 1.5rem;
+    border-top-left-radius: 10px;
+}
+#bmrselect{
+    width: 15vw;
+    height: 10vh;
+    background-color: white;
+    font-size: 1.5rem;
+
+    border-top-right-radius: 10px;
+   
+}
+#bmicalc{
+    display: flex;
+    flex-direction: row;
+    padding-left: 10vw;
+}
+#divofbmicalc1{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    
+    border: 2px solid rgb(99, 102, 102);
+    background-color:rgb(155, 155, 155);
+    font-weight: bold;
+    font-size: 1.4rem;
+    width: 40vw;
+}
+#divofbmicalc2{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    
+    border: 2px solid rgb(99, 102, 102);
+    background-color:rgb(155, 155, 155);
+    font-weight: bold;
+    font-size: 1.4rem;
+    width: 40vw;
+}
+
+#bmicalc input{
+    margin: 20px;
+    border-radius: 5px;
+}
+#bmicalc form{
+    display: flex;
+}
+
+#bmicalc form label{
+    color: rgb(253, 252, 251);
+}
+#bmicalc form button{
+height: 40px;
+width: 150px;
+border-radius: 10px ;
+font-size: 1.2rem;
+color:rgb(102, 102, 102);
+}
+
+#bmicalc form input{
+    width: 15vw;
+    height: 5vh;
+    font-size: 1.5rem;
+}
+
+
+
+
+#divofbmr1{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+    
+    border: 2px solid rgb(99, 102, 102);
+    background-color:rgb(155, 155, 155);
+    font-weight: bold;
+    font-size: 1.4rem;
+    width: 70vw;
+    color: white;
+    
+}
+
+#divofbmr2{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    
+    border: 2px solid rgb(99, 102, 102);
+    background-color:rgb(155, 155, 155);
+    font-weight: bold;
+    font-size: 1.4rem;
+    width: 70vw;
+}
+
+
+#bmrcalc form{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10vw; 
+    font-size: 1.4rem;
+}
+#bmrcalc form label{
+    color: rgb(253, 252, 251);
+}
+
+#bmrcalc form select{
+    width:  15vw;
+    height: 5vh;
+}
+
+#bmrcalc form button{
+height: 40px;
+width: 150px;
+border-radius: 10px ;
+font-size: 1.2rem;
+color:rgb(102, 102, 102);
+}
+
+#bmrcalc form input{
+    width: 15vw;
+    height: 5vh;
+    font-size: 1.5rem;
+}
+
+#divofbmr2 div input{
+    color: white;
+    background-color: rgb(155, 155, 155);
+    border: 2px solid rgb(155, 155, 155);
+}
+table{
+    border: 1px solid gray;
+}
+table th{
+    background-color: orange;
+    height: 5vh;
+    color: white;
+}
+table tr{
+    background-color:white;
+}
+table td{
+    width: 40vw;
+    padding: 10px;
+    font-size: 1rem;
+}
+table td input{
+    color: black;
+    background-color: white;
+    border: 2px solid white;
+}
+
+
+
+/* }
+#bmires{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    margin:30px;
+    border: 2px solid purple;
+    background-color:rgb(212, 130, 212);
+    font-weight: bold;
+    font-size: 1.4rem;
+    width: 50vw;
+ }  */
+
+ @media (max-width: 921px){
+     
+    #bmicalc form{
+        display: flex;
+        flex-direction: column;
+    }
+    #divofbmicalc1{
+        width: 80vw;
+    }
+    #divofbmicalc2{
+       width: 80vw;
+    }
+  
+    #bmicalc form input{
+        width: 60vw;
+    }
+    #bmiselect{
+        width: 20vw;
+    }
+    #bmrselect{
+        width: 20vw;
+    }
+    #divofbmr1{
+        width: 85vw;
+    }
+    #divofbmr2{
+        width: 85vw;
+        padding: 0px;
+    }
+    #bmrcalc form input{
+        width :30vw;
+    }
+       
+}

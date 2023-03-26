@@ -1,0 +1,136 @@
+
+*{
+    margin: 0px;
+}
+#uppermost{
+    display: grid;
+    grid-template-columns: 1fr  6fr;
+    box-shadow: 0px 5px #cecccc;
+    height: 80px;
+    width: 100%;
+    background-color: rgb(53, 53, 53);
+   
+   
+    
+}
+#midsectionhome
+{
+    width: 100%;
+}
+li a:hover{
+    color: black;
+    background-color: rgb(99, 94, 94);
+    
+    border-radius: 15px;
+    transition-property: all;
+    transition: 400ms;
+    font-size: 1.4rem;
+   
+}
+.content{
+    height: 700px;
+    background-image: url(homebg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 5vw;
+}
+.content h2{
+    font-size: 2rem;
+    padding-top: 300px;
+    color: rgb(32, 210, 241);
+}
+.content h1{
+    font-size: 3rem;
+    color: lavender;
+}
+.content h3{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 10px;
+    padding: 2px;
+    border: 1px solid rgb(32, 210, 241);
+    border-radius: 3px;
+    background-color: rgb(31, 132, 149);
+    display: inline-flex;
+    color: lavender;
+
+}
+.video{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.video iframe{
+    padding-top: 30px;
+    padding-left: 10vw;
+    width: 80vw;
+    height: 50vw;
+    
+}
+#ropehead{
+    padding: 15px;
+    text-align: center;
+    color: lavender;
+    background-color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 3em;
+}
+.rope{
+    height: 600px;
+    background-image: url(pexels-leon-ardho-1552242.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.train{
+    height: 600px;
+    background-image: url(pexels-li-sun-2294361.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#trainhead{
+    padding: 15px;
+    text-align: center;
+    color: lavender;
+    background-color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 3em;
+}
+#yoga{
+    padding: 15px;
+    text-align: center;
+    color: lavender;
+    background-color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 3em;
+}
+.yoga{
+    height: 900px;
+    background-image: url(pexels-marta-wave-6454201.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+footer{
+    height: 250px;
+    background-image: linear-gradient(#c0c0aa,#1cefff);
+    text-align: center;
+}
+
+#heading h1{
+    padding: 20px 0px;
+}
+#heading pre{
+    padding-bottom: 10px;
+}
+hr{
+    margin: 0px auto;
+    width: 100%;
+}
+#final{
+    text-align: center;
+    
+    height: 50px;
+}

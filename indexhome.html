@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="indexhome.css">
+    <link rel="stylesheet" href="indexcss.css">
+</head>
+
+<body>
+    <!-- nav bar  -->
+
+
+    <div class="conatiner">
+
+        <section id="uppermost">
+            <a href="mainfile.html" id="logo">
+                <li class="logo">BeingHealthy</li>
+            </a>
+
+            <nav>
+                <!-- <label for="checkbox" class="menu-btn">
+                    <i class="fas fa-bars"></i>
+                </label> -->
+                <!-- <input type="checkbox" name="" id=""> -->
+                <ul>
+
+
+                    <li class="items" id="b"><a href="indexhome.html">HOME</a></li>
+                    <li class="items"><a href="aboutUs.html">ABOUT US</a></li>
+                    <li class="items"><a href="indexblogs.html">BLOGS</a></li>
+                    <li class="items"><a href="Contactus.html">CONTACT US</a></li>
+                    <li class="items"><a href="indexmore.html">MORE</a></li>
+                </ul>
+            </nav>
+            <button  id="mobilemenubtn"></button>
+            <label for="mobilemenubtn"><div class="parallelbar"><img src="parallelbars.png" alt=""></div></label>
+        </section>
+    </div>
+    <div id="mobilemenu" style="display: none;">
+        <ul>
+
+
+            <li class="mobileitems" id="b"><a href="indexhome.html">HOME</a></li>
+            <li class="mobileitems"><a href="aboutUs.html">ABOUT US</a></li>
+            <li class="mobileitems"><a href="indexblogs.html">BLOGS</a></li>
+            <li class="mobileitems"><a href="Contactus.html">CONTACT US</a></li>
+            <li class="mobileitems"><a href="indexmore.html">MORE</a></li>
+        </ul>
+    </div>
+        </section>
+    </div>
+
+    <!-- navbar -->
+
+
+
+
+
+        <!-- home page -->
+        <div id="midsectionhome">
+        <div class="content">
+            <h2>BeingHealthy</h2>
+            <h1>MAKE YOU BE THE FIGHTER</h1>
+            <h3>Take Free 21 Days Challange</h3>
+        </div>
+
+        <div class="video">
+            <iframe width="56vw" height="31.5vw" src="https://www.youtube.com/embed/X9odaOuznFI?autoplay=1&mute=1&controls=0&showinfo=0" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <h1 id="ropehead">BUILD STRENGTH</h1>
+        <div class="rope"></div>
+        
+        <h1 id="trainhead">PROFESSIONAL TRAINERS</h1>
+        <div class="train"></div>
+
+        <h1 id="yoga">FLEXIBILITY</h1>
+        <div class="yoga"></div>
+
+        <!-- homepage -->
+
+        <!-- footer -->
+
+        <footer>
+            <div id="heading">
+                <h1>Try Our Free 21 Days Workout Challange</h1>
+                <pre>No credit card required. Cancel anytime</pre>
+            </div>
+            <hr>
+        </footer>
+        <div id="final">
+            <pre>BeingHealthy &#169 2012 <br>All Rights Reserved| Privacy Policy</pre>
+        </div>
+    </div>
+        <!-- footer -->
+
+        <script>
+            // mobilemenu
+    function pageWidth() {
+  return window.innerWidth != null? window.innerWidth : document.documentElement && document.documentElement.clientWidth ? document.documentElement.clientWidth : document.body != null ? document.body.clientWidth : null;
+}
+console.log(pageWidth());
+
+
+function greatersize(){
+    var box1 = document.getElementById("mobilemenu");
+        var box2 = document.getElementById("midsectionhome");
+        var box3 =document.getElementById("footer");
+   if(pageWidth()>921){
+             box1.style.display="none";
+            box2.style.display="block";
+            box3.style.display="flex";
+   }
+}
+    document.getElementById("mobilemenubtn").addEventListener("click",function(){
+    
+        var box1 = document.getElementById("mobilemenu");
+        var box2 = document.getElementById("midsectionhome");
+        var box3 =document.getElementById("footer");
+    if(pageWidth() <921){
+        if(box1.style.display=="none" ){
+            box1.style.display="grid";
+            box2.style.display="none";
+            box3.style.display="none";
+
+    
+        }
+        else{
+            box1.style.display="none";
+            box2.style.display="block";
+            box3.style.display="flex";
+    
+        }}
+
+        else{
+            greatersize();
+        }
+    })
+
+    // for page greater than 921px
+     var box1 = document.getElementById("mobilemenu");
+        var box2 = document.getElementById("midsectionhome");
+        var box3 =document.getElementById("footer");
+   if(pageWidth()>921){
+             box1.style.display="none";
+            box2.style.display="block";
+            box3.style.display="flex";
+   }
+
+//    for resizing
+   
+window.addEventListener('resize', function(event){
+    greatersize();
+})
+
+document.getElementsByClassName("b").addEventListener("click",function(){
+
+})
+       
+            
+            
+            
+            
+            
+            
+            
+        </script>
+        </body>
+
+</html>
